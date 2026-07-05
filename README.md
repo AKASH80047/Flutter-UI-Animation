@@ -1,4 +1,19 @@
  **Flutter UI Animation** project ke liye ek clean, professional, simple-human-English **README.md** ye rahega. Maine tumhari existing README ko base banaya hai, jisme Liquid Swipe animation, package usage aur project details hain. 
+ <p align="center">
+  <img src="assets/page1.png" alt="Flutter UI Animation" width="700"/>
+</p>
+
+<p align="center">
+  A beautiful Flutter project with smooth and interactive Liquid Swipe animations.
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Flutter-Framework-blue?logo=flutter" alt="Flutter"/>
+  <img src="https://img.shields.io/badge/Dart-Language-blue?logo=dart" alt="Dart"/>
+  <img src="https://img.shields.io/badge/UI-Animation-orange" alt="UI Animation"/>
+  <img src="https://img.shields.io/badge/Status-Active-success" alt="Status"/>
+</p>
+
 
 ````markdown
 # 🌊 Flutter UI Animation
