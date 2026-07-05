@@ -54,7 +54,7 @@ Demonstrates how to use the liquid_swipe plugin.
                     fontWeight: FontWeight.w600),
               ),
               new Text(
-                "Sahdeep",
+                "Akash",
                 style: TextStyle(
                     fontSize: 30,
                     fontFamily: "Billy",

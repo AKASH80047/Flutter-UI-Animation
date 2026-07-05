@@ -17,6 +17,6 @@ void main() {
 
     // Verify that the initial onboarding screen has the text "Hi".
     expect(find.text('Hi'), findsOneWidget);
-    expect(find.text('Sahdeep'), findsOneWidget);
+    expect(find.text('Akash'), findsOneWidget);
   });
 }

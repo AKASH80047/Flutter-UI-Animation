@@ -243,7 +243,7 @@ class LiquidSwipe extends StatefulWidget {
   ///               style: MyApp.style,
   ///             ),
   ///             Text(
-  ///               "Sahdeep",
+  ///               "Akash",
   ///               style: MyApp.style,
   ///             ),
   ///           ],

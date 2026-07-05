@@ -34,7 +34,7 @@ class _WithBuilder extends State<WithBuilder> {
   late UpdateType updateType;
 
   List<ItemData> data = [
-    ItemData(Colors.blue, "assets/1.png", "Hi", "It's Me", "Sahdeep"),
+    ItemData(Colors.blue, "assets/1.png", "Hi", "It's Me", "Akash"),
     ItemData(Colors.deepPurpleAccent, "assets/1.png", "Take a", "Look At",
         "Liquid Swipe"),
     ItemData(Colors.green, "assets/1.png", "Liked?", "Fork!", "Give Star!"),
@@ -238,7 +238,7 @@ class _WithPages extends State<WithPages> {
                 style: WithPages.style,
               ),
               Text(
-                "Sahdeep",
+                "Akash",
                 style: WithPages.style,
               ),
             ],
