@@ -23,7 +23,7 @@ void main() {
       expect(clipPathWidget.verReveal, equals(0.0));
     });
     test('getPAth', () {
-      expect(clipPathWidget.getClip(iconSize).runtimeType, Path);
+      expect(clipPathWidget.getClip(iconSize), isA<Path>());
     });
     test('shouldReclip', () {
       expect(clipPathWidget.shouldReclip(clipPathWidget), true);

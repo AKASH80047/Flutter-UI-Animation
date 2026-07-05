@@ -50,7 +50,7 @@ void main() {
     });
 
     test('Path Check for exception', () {
-      expect(clipPathWidget2.getClip(iconSize).runtimeType, Path);
+      expect(clipPathWidget2.getClip(iconSize), isA<Path>());
     });
 
     test('waveHorRadiusF', () {
