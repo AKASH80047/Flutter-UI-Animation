@@ -1,201 +1,270 @@
-<h1 align="center" xmlns="http://www.w3.org/1999/html">
-  <br>
-   <img src="https://raw.githubusercontent.com/AKASH80047/Flutter-UI-Animation/main/assets/page1.png" alt="Liquid Swipe" title="Logo" />
-  <br>
-  Flutter UI Animation
-</h1>
+ **Flutter UI Animation** project ke liye ek clean, professional, simple-human-English **README.md** ye rahega. Maine tumhari existing README ko base banaya hai, jisme Liquid Swipe animation, package usage aur project details hain. 
 
-<p align="center">  
-  <a href="https://github.com/AKASH80047/Flutter-UI-Animation/releases">
-    <img height="20" alt="GitHub All Releases" src="https://img.shields.io/github/downloads/AKASH80047/Flutter-UI-Animation/total.svg?style=for-the-badge">
-  </a>
-  <a href="https://pub.dev/packages/liquid_swipe">
-    <img height="20" alt="Pub" src="https://img.shields.io/pub/v/liquid_swipe.svg?style=for-the-badge">
-  </a>
-  <a href="https://github.com/AKASH80047/Flutter-UI-Animation/blob/main/LICENSE">
-    <img src="https://img.shields.io/badge/license-APACHE2.0-blue.svg?longCache=true&style=flat-square">
-  </a>
-  <a href="https://flutter.dev">
-    <img src="https://img.shields.io/badge/Built%20for-Flutter-blue.svg?longCache=true&style=flat-square">
-  </a>
-  <a href="https://github.com/Solido/awesome-flutter">
-    <img alt="Awesome Flutter" src="https://img.shields.io/badge/Awesome-Flutter-blue.svg?longCache=true&style=flat-square" />
-  </a>
-</p>
+````markdown
+# 🌊 Flutter UI Animation
 
-<p align="center">
-  This repository contains high-quality <strong>Flutter UI Animations</strong>. 
-  It features <strong>Liquid Swipe Flutter</strong>, an amazing revealing clipper that brings a smooth, liquid-like transition effect to stacked Containers/Widgets. Inspired by <a href="https://github.com/Cuberto/liquid-swipe">Cuberto's liquid swipe</a> and <a href="https://github.com/aagarwal1012/IntroViews-Flutter">IntroViews</a>.
-</p>
+A beautiful and interactive Flutter application that demonstrates smooth **Liquid Swipe animations** between multiple screens.
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/AKASH80047/Flutter-UI-Animation/main/assets/example.gif" width="310" height="640" alt="Example GIF 1">
-  <img src="https://raw.githubusercontent.com/AKASH80047/Flutter-UI-Animation/main/assets/another.gif" width="310" height="640" alt="Example GIF 2">
-</p>
+This project is built using **Flutter** and **Dart**. It provides a modern liquid-like transition effect that makes screen navigation smooth, attractive, and engaging.
 
-# Table of contents
-* [Getting Started](#getting-started)
-* [Usage](#usage)
-* [Migration](#migration) 
-* [Sample APK](#sample-apk)
-* [Documentation](#documentation)
-  * [LiquidSwipe](#liquidswipe)
-  * [LiquidController](#liquidcontroller)  
-* [Credits](#credits)
-* [Author & Support](#author--support)
-* [Contributors](#contributors-)
+---
 
-# Getting Started
+## 📱 About the Project
 
-* Add this to your `pubspec.yaml`:
-  ```yaml
-  dependencies:
-    liquid_swipe: ^3.1.0
-  ```
-* Get the package from Pub:
-  ```bash
-  flutter packages get
-  ```
-* Import it in your file:
-  ```dart
-  import 'package:liquid_swipe/liquid_swipe.dart';
-  ```
-  
-# Usage
+Flutter UI Animation is a simple project created to demonstrate how beautiful animations can improve the user experience of a mobile application.
 
-* `Liquid Swipe` just requires a list of [`Widgets (like Containers)`](https://api.flutter.dev/flutter/widgets/Container-class.html) to allow developers complete flexibility in designing their UI.
-  ```dart
-  final pages = [
-    Container(...),
-    Container(...),
-    Container(...),
-  ];
-  ```
-  
-* Now, simply pass these pages to the `LiquidSwipe` widget:
-  ```dart
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Builder(
-        builder: (context) => LiquidSwipe(
-          pages: pages,
-        ),
-      ),
-    );
-  }
-  ```
+When the user swipes the screen, the next page appears with a smooth **liquid wave effect** instead of a normal page transition.
 
-* Check out the complete [Example](https://github.com/AKASH80047/Flutter-UI-Animation/tree/main/example)
+This project is useful for Flutter beginners, students, and developers who want to learn how animations and swipe transitions work in Flutter.
 
-# Migration
+---
 
-Some things to keep in mind while updating to v2.0.0 from any older version:
-* v2.0.0 is migrated to null safety. See [migration guide](https://dart.dev/null-safety/migration-guide).
-* Attribute `enableSlideIcon` is removed from `LiquidSwipe`. You can simply pass `null` to `slideIconWidget` to disable it.
-* Attribute `positionSlideIcon` is now ranged from `0.0` to `1.0`.
-* Next Reveal is enabled by default. If you want to disable it, you might want to make changes in your fork. Open an issue and I'll help.
+## ✨ Features
 
-That's it ;)
+- 🌊 Smooth Liquid Swipe Animation
+- 📱 Beautiful and Modern UI
+- 👆 Easy Swipe Navigation
+- 🎨 Attractive Page Transitions
+- ⚡ Smooth Performance
+- 📄 Multiple Animated Screens
+- 🧩 Simple Flutter Widget Structure
+- 🎓 Beginner-Friendly Project
 
-# Sample APK
+---
 
-Please download the APK from the [Releases](https://github.com/AKASH80047/Flutter-UI-Animation/releases) or the [Assets](https://github.com/AKASH80047/Flutter-UI-Animation/tree/main/assets) folder.
+## 🛠️ Technologies Used
 
-# Documentation  
+- **Flutter** — Mobile application framework
+- **Dart** — Programming language
+- **Liquid Swipe** — Animation package
+- **Material Design** — UI components and design
 
-## LiquidSwipe
+---
 
-Please refer to the [API documentation](https://pub.dev/documentation/liquid_swipe/latest/liquid_swipe/LiquidSwipe-class.html) for more details. 
+## 🎯 Project Purpose
 
-| Property | Type | Description | Default Value |
-|-|:-:|-|:-:|
-| pages | `List<Widget>` | Set Pages/Views/Containers. See complete example for usage. | @required value |
-| fullTransitionValue | `double` | Handle swipe sensitivity through it. Lower the value faster the animation | 400.0 |
-| initialPage | `int` | Set initial page value, wrong position will throw exception. | 0 |
-| slideIconWidget | `Widget` | Icon/Widget you want to display for swipe indication. Remember the curve will be created according to it. | null |
-| positionSlideIcon | `double` | Icon position on vertical axis. Must satisfy this condition `0.0 <= value <= 1.0` | 0.8 |
-| enableLoop | `bool` | Whether you want to loop through all those `pages`. | true |
-| liquidController | `LiquidController` | Controller to handle some runtime changes. [Refer](#liquidcontroller) | null |
-| waveType | `WaveType enum` | Type of clipper you want to use. | WaveType.liquidReveal |
-| onPageChangeCallback | `Callback` | Triggered whenever page changes. | null |
-| currentUpdateTypeCallback | `Callback` | Triggered whenever UpdateType changes. [Refer](https://pub.dev/documentation/liquid_swipe/latest/Helpers_Helpers/UpdateType-class.html) | null |
-| slidePercentCallback | `Callback` | Triggered on Swipe animation. Use carefully as its quite frequent on swipe. | null |
-| ignoreUserGestureWhileAnimating | `bool` | If you want to block gestures while swipe is still animating. See #5 | false |
-| disableUserGesture | `bool` | Disable user gesture, always. | false |
-| enableSideReveal | `bool` | Enable/Disable side reveal | false |
-| preferDragFromRevealedArea | `bool` | Disabling the drag from the whole page and allowing only from the revealed part of the screen and the icon | false |
+The main purpose of this project is to learn and understand:
 
-## LiquidController
+- Flutter UI Design
+- Flutter Animations
+- Swipe Gestures
+- Page Transitions
+- Flutter Widgets
+- Package Integration
+- Modern Mobile App Design
 
-A Controller class with utility fields and methods.
+---
 
-### Simple Usage
+## 🚀 Getting Started
 
-1. Create a `LiquidController` object and initialize it in `initState()`:
-   ```dart
-   late LiquidController liquidController;
+Follow these simple steps to run the project on your computer.
 
-   @override
-   void initState() {
-     super.initState();
-     liquidController = LiquidController();
-   }
-   ```
+### 1. Clone the Repository
 
-2. Add it to the `LiquidSwipe` constructor:
-   ```dart
-   LiquidSwipe(
-     pages: pages,
-     liquidController: liquidController,
-   )
-   ```
+```bash
+git clone https://github.com/AKASH80047/Flutter-UI-Animation.git
+````
 
-Note: You cannot invoke methods on the controller before the `build` method has initialized `LiquidSwipe`.
+### 2. Open the Project Folder
 
-* **Properties**
-  * `currentPage` - Getter to retrieve the current page index. Default value is `0`.
-  * `isUserGestureDisabled` - Check if user gestures are disabled. Default value is `false`.
-* **Methods**
-  * `animateToPage({required int page, int duration = 600})` - Animates to the target page index. The duration is the total duration of the animation.
-  * `jumpToPage({required int page})` - Instantly jumps to the target page index without animation.
-  * `shouldDisableGestures({required bool disable})` - Use this method to disable gestures dynamically, e.g., on specific pages within `onPageChangeCallback`.
+```bash
+cd Flutter-UI-Animation
+```
 
-Please refer to the [API documentation](https://pub.dev/documentation/liquid_swipe/latest/PageHelpers_LiquidController/LiquidController-class.html) for more details. 
+### 3. Install Dependencies
 
-# Credits
+```bash
+flutter pub get
+```
 
-* [Cuberto](https://github.com/Cuberto) for the awesome Swift implementation of [Liquid Swipe](https://github.com/Cuberto/liquid-swipe).
-* [@aagarwal1012](https://github.com/aagarwal1012) for [IntroViews](https://github.com/aagarwal1012/IntroViews-Flutter), which inspired parts of this project.
+### 4. Run the Application
 
-### Disclaimer: This project is not affiliated with Cuberto, but we have notified them through this [issue](https://github.com/Cuberto/liquid-swipe/issues/10).
+```bash
+flutter run
+```
 
-# Author & Support
+---
 
-This project is created by [Sahdeep Singh](https://github.com/iamSahdeep) with lots of support.
-> If you appreciate the work, connect with the author on [LinkedIn](https://www.linkedin.com/in/iamsahdeep/) to keep them motivated.
+## 📦 Package Used
 
-<img src="https://cdn-images-1.medium.com/max/1200/1*2yFbiGdcACiuLGo4dMKmJw.jpeg" width="90" height="35" alt="Medium Logo">
+This project uses the `liquid_swipe` package to create smooth liquid-like screen transitions.
 
-# Contributors ✨
+Add the package to your `pubspec.yaml` file:
 
-Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+```yaml
+dependencies:
+  liquid_swipe: ^3.1.0
+```
 
-<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-<!-- prettier-ignore-start -->
-<!-- markdownlint-disable -->
-<table>
-  <tr>
-    <td align="center"><a href="https://sahdeepsingh.com"><img src="https://avatars1.githubusercontent.com/u/26563213?v=4" width="100px;" alt=""/><br /><sub><b>Sahdeep Singh</b></sub></a><br /><a href="https://github.com/AKASH80047/Flutter-UI-Animation/commits?author=iamSahdeep" title="Code">💻</a></td>
-    <td align="center"><a href="https://github.com/YasserOJ"><img src="https://avatars0.githubusercontent.com/u/26030291?v=4" width="100px;" alt=""/><br /><sub><b>Yasser Omar Jammeli</b></sub></a><br /><a href="https://github.com/AKASH80047/Flutter-UI-Animation/commits?author=YasserOJ" title="Code">💻</a> <a href="https://github.com/AKASH80047/Flutter-UI-Animation/issues?q=author%3AYasserOJ" title="Bug reports">🐛</a></td>
-    <td align="center"><a href="https://github.com/mourad-brahim"><img src="https://avatars1.githubusercontent.com/u/17046133?v=4" width="100px;" alt=""/><br /><sub><b>Mourad Brahim</b></sub></a><br /><a href="https://github.com/AKASH80047/Flutter-UI-Animation/commits?author=mourad-brahim" title="Code">💻</a></td>
-    <td align="center"><a href="https://github.com/heshesh2010"><img src="https://avatars1.githubusercontent.com/u/16393042?v=4" width="100px;" alt=""/><br /><sub><b>heshesh2010</b></sub></a><br /><a href="https://github.com/AKASH80047/Flutter-UI-Animation/issues?q=author%3Aheshesh2010" title="Bug reports">🐛</a> <a href="#userTesting-heshesh2010" title="User Testing">📓</a></td>
-    <td align="center"><a href="https://github.com/ssoldy"><img src="https://avatars2.githubusercontent.com/u/45917574?v=4" width="100px;" alt=""/><br /><sub><b>Federico Tarascio</b></sub></a><br /><a href="https://github.com/AKASH80047/Flutter-UI-Animation/commits?author=ssoldy" title="Code">💻</a></td>
-  </tr>
-</table>
+Then run:
 
-<!-- markdownlint-enable -->
-<!-- prettier-ignore-end -->
-<!-- ALL-CONTRIBUTORS-LIST:END -->
+```bash
+flutter pub get
+```
 
-This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
+---
+
+## 💻 Basic Usage
+
+First, import the package:
+
+```dart
+import 'package:liquid_swipe/liquid_swipe.dart';
+```
+
+Create multiple pages:
+
+```dart
+final pages = [
+  Container(
+    color: Colors.blue,
+    child: Center(
+      child: Text("Page 1"),
+    ),
+  ),
+  Container(
+    color: Colors.green,
+    child: Center(
+      child: Text("Page 2"),
+    ),
+  ),
+  Container(
+    color: Colors.orange,
+    child: Center(
+      child: Text("Page 3"),
+    ),
+  ),
+];
+```
+
+Now use these pages inside the `LiquidSwipe` widget:
+
+```dart
+LiquidSwipe(
+  pages: pages,
+)
+```
+
+The user can now swipe between screens with a smooth liquid animation.
+
+---
+
+## 🔄 How It Works
+
+The application contains multiple screens.
+
+When the user swipes:
+
+1. The current screen starts moving.
+2. A liquid wave animation appears.
+3. The next screen is revealed smoothly.
+4. The transition creates a modern and interactive experience.
+
+---
+
+## 📚 What I Learned
+
+While working with this project, I learned:
+
+* How to create animations in Flutter
+* How to use third-party Flutter packages
+* How to create multiple animated screens
+* How to work with swipe gestures
+* How to improve mobile UI design
+* How to create smooth page transitions
+* How to structure a Flutter project
+
+---
+
+## 💡 Where This Animation Can Be Used
+
+Liquid Swipe animations can be useful in:
+
+* 🚀 Onboarding Screens
+* 📱 Introduction Pages
+* 🛍️ Product Showcase Apps
+* 🎓 Educational Apps
+* 💼 Portfolio Apps
+* 🏢 Business Applications
+* 🎨 Creative Mobile Applications
+
+---
+
+## 🔮 Future Improvements
+
+In the future, this project can be improved by adding:
+
+* 🌙 Dark Mode
+* 🎨 More Animation Styles
+* 📱 Responsive UI
+* 🔘 Custom Navigation Buttons
+* 🖼️ More Animated Screens
+* ⚙️ Better User Controls
+* 🚀 Improved Performance
+
+---
+
+## 📂 Project Structure
+
+```text
+Flutter-UI-Animation/
+│
+├── android/
+├── assets/
+├── example/
+├── lib/
+├── test/
+├── pubspec.yaml
+└── README.md
+```
+
+---
+
+## 🤝 Contribution
+
+Contributions are welcome.
+
+If you want to improve this project:
+
+1. Fork the repository
+2. Create a new branch
+3. Make your changes
+4. Commit your changes
+5. Push your branch
+6. Create a Pull Request
+
+---
+
+## 👨‍💻 Author
+
+**Akash Pandey**
+
+* GitHub: `AKASH80047`
+* Project: `Flutter UI Animation`
+* Technology: `Flutter & Dart`
+
+---
+
+## ⭐ Support
+
+If you like this project, please give it a **⭐ Star** on GitHub.
+
+Your support helps motivate me to build and share more Flutter projects.
+
+---
+
+## 📄 License
+
+This project is available for learning and educational purposes.
+
+---
+
+## ❤️ Thank You
+
+Thank you for visiting this project.
+
+I hope this project helps you understand Flutter animations and create beautiful mobile applications.
+
+**Happy Coding! 🚀**
+
+```
